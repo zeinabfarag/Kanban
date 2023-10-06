@@ -1,0 +1,44 @@
+.card {
+  background-color: var(--white);
+  border: 1px solid var(--teal);
+  height: 100px;
+  min-height: 65px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  overflow-x: hidden;
+  cursor: grab;
+
+  &:hover {
+    box-shadow: rgba(0, 128, 128, 0.25) 0px 8px 24px;
+  }
+
+  &__delete {
+    position: absolute;
+    right: 15px;
+
+    svg {
+      color: var(--dark-grey);
+      font-size: 25px;
+      border-radius: 50%;
+      padding: 3px;
+      &:hover {
+        background-color: var(--light-grey);
+      }
+    }
+  }
+
+  textarea {
+    width: 100%;
+    resize: none;
+    border: none;
+    background: transparent;
+    outline: none;
+  }
+
+  &__dragging {
+    opacity: 0.3;
+  }
+}

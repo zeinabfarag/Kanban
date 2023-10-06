@@ -1,0 +1,45 @@
+.board {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  overflow-y: hidden;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0px 40px;
+
+  &__box {
+    margin: auto;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: start;
+    height: 60px;
+    width: 160px;
+    border: 1px solid var(--light-grey);
+    border-radius: 10px;
+    background-color: var(--teal);
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+
+    svg {
+      margin-right: 10px;
+      font-size: 10px;
+    }
+
+    &:hover {
+      filter: brightness(130%);
+    }
+  }
+
+  &__columns {
+    display: flex;
+    gap: 1rem;
+  }
+}
